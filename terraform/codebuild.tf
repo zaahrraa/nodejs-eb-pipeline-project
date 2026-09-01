@@ -13,8 +13,8 @@ resource "aws_codebuild_project" "build" {
     image_pull_credentials_type = "CODEBUILD"
   }
 
-  source {
-    type      = "CODEPIPELINE"
-    buildspec = "buildspec.yml"
+source {
+   type      = "CODEPIPELINE"
+   buildspec = "app/buildspec.yml"  
   }
 }
