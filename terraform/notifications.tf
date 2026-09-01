@@ -5,7 +5,7 @@ resource "aws_sns_topic" "pipeline_notifications" {
 resource "aws_sns_topic_subscription" "email" {
   topic_arn = aws_sns_topic.pipeline_notifications.arn
   protocol  = "email"
-  endpoint  = "YOUR-EMAIL@example.com"   # <-- Replace with your real email
+  endpoint  = "syedazahramahmood@example.com"   
 }
 
 resource "aws_codestarnotifications_notification_rule" "pipeline_notify" {
